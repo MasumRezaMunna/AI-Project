@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink dark:bg-paper-dark dark:text-ink-dark font-body antialiased;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  ::selection {
+    @apply bg-mustard-300/60;
+  }
+
+  /* Visible keyboard focus everywhere */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid theme("colors.mustard.500");
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .trail-divider {
+    background-image: repeating-linear-gradient(
+      to right,
+      currentColor 0,
+      currentColor 6px,
+      transparent 6px,
+      transparent 16px
+    );
+    height: 2px;
+    opacity: 0.35;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
