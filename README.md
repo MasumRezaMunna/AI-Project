@@ -1,5 +1,7 @@
 # Wanderlust Trails — Client
 
+Live: https://moonlit-cascaron-b47f4a.netlify.app
+
 Next.js 14 (App Router) + TypeScript frontend for the Wanderlust Trails travel experience marketplace.
 
 ## Tech stack
