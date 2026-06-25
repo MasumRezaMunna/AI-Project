@@ -45,12 +45,12 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-paper/80">
             <li>
               <a href="mailto:hello@wanderlusttrails.example" className="hover:text-mustard-300">
-                hello@wanderlusttrails.example
+                hello@wanderlusttrails.com
               </a>
             </li>
             <li>
               <a href="tel:+18005551234" className="hover:text-mustard-300">
-                +1 (800) 555-1234
+                +121 555-1234
               </a>
             </li>
           </ul>

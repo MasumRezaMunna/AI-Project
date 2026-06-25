@@ -78,3 +78,12 @@ export interface AIRecommendResponse {
 export interface AIHighlightResponse {
   highlight: string;
 }
+
+export type UserRole = "user" | "admin";
+
+export interface PublicUser {
+  id: string;
+  name: string;
+  email: string;
+  role: UserRole;
+}
