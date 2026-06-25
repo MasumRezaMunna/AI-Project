@@ -15,8 +15,8 @@ import {
   signInWithPopup,
   signOut,
   updateProfile,
-  FirebaseError,
 } from "firebase/auth";
+import { FirebaseError } from "firebase/app";
 import { firebaseAuth, googleProvider } from "@/lib/firebase";
 import { getMe, syncProfile, setAuthTokenGetter } from "@/lib/api";
 import { PublicUser } from "@/lib/types";
